@@ -1,0 +1,295 @@
+/* css/style.css */
+
+/* --- GERAL E FONTES --- */
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex-grow: 1;
+}
+
+/* --- CORES CUSTOMIZADAS --- */
+.text-custom-red {
+    color: #d60000;
+}
+
+.bg-custom-red {
+    background-color: #d60000;
+    border-color: #d60000;
+}
+
+.btn-custom-red {
+    background-color: #d60000;
+    color: #ffffff;
+    border: none;
+    padding: 10px 25px;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-custom-red:hover {
+    background-color: #a70000;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+/* --- NAVBAR --- */
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+.nav-link {
+    font-weight: 600;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: #d60000 !important;
+}
+
+#cart-count {
+    font-size: 0.7rem;
+    vertical-align: top;
+}
+
+/* --- HERO BANNER (PÁGINA INICIAL) --- */
+#hero {
+    height: 60vh;
+    background: url('../img/banner.png') no-repeat center center;
+    background-size: cover;
+    position: relative;
+    color: #fff;
+}
+
+/* Overlay escuro para melhorar a legibilidade do texto */
+#hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Garante que o conteúdo fique acima do overlay */
+#hero .container {
+    position: relative;
+    z-index: 2;
+}
+
+
+/* --- SEÇÃO DIFERENCIAIS --- */
+#diferenciais .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#diferenciais .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1) !important;
+}
+
+/* --- PÁGINA DE PRODUTOS --- */
+.card-product {
+    transition: box-shadow 0.3s ease;
+}
+
+.card-product:hover {
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.card-product .card-img-top {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-price {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #d60000;
+}
+
+/* --- PÁGINA DO CARRINHO --- */
+.cart-item img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* --- FOOTER --- */
+footer a:hover {
+    color: #d60000 !important;
+    text-decoration: underline !important;
+}
+
+
+/* ADICIONE ESTAS NOVAS REGRAS AO FINAL DO SEU ARQUIVO CSS */
+
+/* --- SEÇÃO DEPOIMENTOS --- */
+.testimonial-card {
+    border: none;
+    background-color: #f8f9fa; /* Um cinza bem claro */
+    border-left: 4px solid #d60000;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+}
+
+.testimonial-card .blockquote-footer {
+    color: #555;
+    font-weight: 600;
+}
+
+/* --- SEÇÃO CTA FINAL --- */
+.cta-banner .btn-light {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.cta-banner .btn-light:hover {
+    background-color: #f8f9fa;
+    color: #a70000;
+}
+
+
+
+
+/* ========================================= */
+/* ESTILOS DO NOVO RODAPÉ PROFISSIONAL
+/* ========================================= */
+
+/* Remove o estilo antigo genérico do footer */
+footer {
+    background-color: transparent !important;
+}
+
+.site-footer a {
+    color: #adb5bd; /* Um cinza mais claro que o text-muted padrão */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.site-footer a:hover {
+    color: #d60000 !important;
+}
+
+/* Título dos Widgets */
+.footer-widget .widget-title {
+    font-weight: 600;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    position: relative;
+    color: #ffffff;
+}
+
+/* Linha vermelha decorativa abaixo dos títulos */
+.footer-widget .widget-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 40px;
+    height: 2px;
+    background-color: #d60000;
+}
+
+/* Formulário da Newsletter */
+.newsletter-form .form-control {
+    background-color: #343a40;
+    border-color: #495057;
+    color: #ffffff;
+}
+
+.newsletter-form .form-control:focus {
+    background-color: #343a40;
+    border-color: #d60000;
+    box-shadow: 0 0 0 0.25rem rgba(214, 0, 0, 0.25);
+    color: #ffffff;
+}
+
+.newsletter-form .form-control::placeholder {
+    color: #adb5bd;
+}
+
+/* Rodapé Inferior */
+.footer-bottom {
+    border-top: 1px solid #343a40;
+}
+
+.footer-bottom .social-links a {
+    font-size: 1.2rem;
+    color: #adb5bd;
+}
+
+.footer-bottom .social-links a:hover {
+    color: #ffffff !important;
+}
+
+
+
+
+
+
+/* ========================================= */
+/* ESTILOS DA PÁGINA DE DETALHES DO PRODUTO
+/* ========================================= */
+
+.card-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Galeria de Imagens */
+.main-product-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.thumbnail-gallery .thumbnail-image {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    cursor: pointer;
+    opacity: 0.6;
+    transition: opacity 0.3s ease, border-color 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.thumbnail-gallery .thumbnail-image:hover {
+    opacity: 1;
+}
+
+.thumbnail-gallery .thumbnail-image.active {
+    opacity: 1;
+    border-color: #d60000;
+}
+
+/* Título e Preço */
+.product-title {
+    font-weight: 700;
+}
+
+/* Seletor de quantidade */
+.quantity-selector {
+    max-width: 150px;
+}
+
+.quantity-selector .form-control {
+    border-left: 0;
+    border-right: 0;
+    box-shadow: none;
+}
+.quantity-selector .form-control:focus {
+    border-color: #ced4da;
+}

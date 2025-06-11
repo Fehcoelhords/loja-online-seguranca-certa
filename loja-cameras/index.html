@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segurança Certa - Câmeras de Segurança</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logo.png" alt="Logo Segurança Certa" style="height: 40px;">
+                <span class="fw-bold text-dark">Segurança<span class="text-custom-red">Certa</span></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="produtos.html">Produtos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contato.html">Contato</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="carrinho.html">
+                            <i class="bi bi-cart-fill"></i> Carrinho
+                            <span class="badge rounded-pill bg-custom-red" id="cart-count">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header id="hero" class="d-flex align-items-center">
+        <div class="container text-center text-white">
+            <h1 class="display-3 fw-bold">A sua segurança em primeiro lugar.</h1>
+            <p class="lead my-4">Monitore o que mais importa com as melhores câmeras do mercado.</p>
+            <a href="produtos.html" class="btn btn-custom-red btn-lg">Ver Produtos</a>
+        </div>
+    </header>
+
+    <section id="diferenciais" class="py-5">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 border-0 shadow-sm p-4">
+                        <i class="bi bi-truck display-4 text-custom-red"></i>
+                        <h3 class="h4 my-3">Frete Grátis</h3>
+                        <p class="text-muted">Receba seus produtos em casa sem custo adicional para todo o Brasil.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 border-0 shadow-sm p-4">
+                        <i class="bi bi-tools display-4 text-custom-red"></i>
+                        <h3 class="h4 my-3">Instalação Profissional</h3>
+                        <p class="text-muted">Conte com nossa equipe de especialistas para instalar seu sistema de segurança.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 border-0 shadow-sm p-4">
+                        <i class="bi bi-headset display-4 text-custom-red"></i>
+                        <h3 class="h4 my-3">Suporte 24/7</h3>
+                        <p class="text-muted">Nossa equipe está disponível a qualquer hora para te ajudar com dúvidas e problemas.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="featured-products" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center mb-5">
+                    <h2 class="fw-bold">Produtos em Destaque</h2>
+                    <p class="lead text-muted">Os mais vendidos e recomendados por nossos especialistas.</p>
+                </div>
+            </div>
+            <div id="featured-products-list" class="row g-4"></div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center mb-5">
+                    <h2 class="fw-bold">O que nossos clientes dizem</h2>
+                    <p class="lead text-muted">A satisfação de quem confia em nosso trabalho.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card testimonial-card h-100">
+                        <div class="card-body">
+                            <div class="mb-3">
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                            </div>
+                            <p class="card-text">"Serviço de instalação impecável e produtos de altíssima qualidade. Me sinto muito mais seguro em casa. Recomendo a todos!"</p>
+                            <footer class="blockquote-footer mt-3">João da Silva, <cite title="Source Title">São Paulo, SP</cite></footer>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                     <div class="card testimonial-card h-100">
+                        <div class="card-body">
+                            <div class="mb-3">
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-half text-warning"></i>
+                            </div>
+                            <p class="card-text">"O atendimento foi excelente, tiraram todas as minhas dúvidas. A câmera Wi-Fi é muito fácil de configurar pelo celular."</p>
+                            <footer class="blockquote-footer mt-3">Maria Oliveira, <cite title="Source Title">Rio de Janeiro, RJ</cite></footer>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                     <div class="card testimonial-card h-100">
+                        <div class="card-body">
+                             <div class="mb-3">
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                            </div>
+                            <p class="card-text">"Comprei o kit para minha loja e a cobertura é fantástica. O suporte técnico me ajudou remotamente com tudo. Virei cliente!"</p>
+                            <footer class="blockquote-footer mt-3">Carlos Pereira, <cite title="Source Title">Belo Horizonte, MG</cite></footer>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-banner bg-custom-red text-white text-center py-5">
+        <div class="container">
+            <h2 class="display-5 fw-bold mb-3">Pronto para proteger seu patrimônio?</h2>
+            <p class="lead mb-4">Fale com um de nossos especialistas e encontre a solução de segurança ideal para você.</p>
+            <a href="contato.html" class="btn btn-light btn-lg text-custom-red fw-bold">Solicite um Orçamento</a>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="main-footer bg-dark text-white pt-5 pb-4">
+            <div class="container">
+                <div class="row">
+    
+                    <div class="col-md-6 col-lg-4 mb-4">
+                        <div class="footer-widget">
+                            <a class="navbar-brand mb-3 d-inline-block" href="index.html">
+                                <img src="img/logo.png" alt="Logo Segurança Certa" style="height: 40px; filter: brightness(0) invert(1);">
+                                <span class="fs-5 fw-bold text-white">Segurança<span class="text-custom-red">Certa</span></span>
+                            </a>
+                            <p class="text-muted">A sua loja de confiança para sistemas de segurança e monitoramento. Tecnologia de ponta para proteger o que mais importa.</p>
+                            <div class="footer-payment-icons mt-3">
+                                <h6 class="text-white-50">Pagamento Seguro:</h6>
+                                <i class="bi bi-credit-card fs-4 me-2"></i>
+                                <i class="bi bi-paypal fs-4 me-2"></i>
+                                <i class="bi bi-upc-scan fs-4"></i> </div>
+                        </div>
+                    </div>
+    
+                    <div class="col-md-6 col-lg-2 mb-4">
+                        <div class="footer-widget">
+                            <h5 class="widget-title">Contato</h5>
+                            <ul class="list-unstyled">
+                                <li class="d-flex align-items-start mb-2">
+                                    <i class="bi bi-geo-alt-fill text-custom-red me-2 mt-1"></i>
+                                    <span class="text-muted">Av. Paulista, 1000<br>São Paulo, SP</span>
+                                </li>
+                                <li class="d-flex align-items-start mb-2">
+                                    <i class="bi bi-telephone-fill text-custom-red me-2 mt-1"></i>
+                                    <a href="tel:+5511999999999" class="text-muted">(11) 99999-9999</a>
+                                </li>
+                                <li class="d-flex align-items-start">
+                                    <i class="bi bi-envelope-fill text-custom-red me-2 mt-1"></i>
+                                    <a href="mailto:contato@segurancacerta.com" class="text-muted">contato@segurancacerta.com</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+    
+                    <div class="col-md-6 col-lg-2 mb-4">
+                        <div class="footer-widget">
+                            <h5 class="widget-title">Links</h5>
+                            <ul class="list-unstyled footer-links">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="produtos.html">Produtos</a></li>
+                                <li><a href="contato.html">Contato</a></li>
+                                <li><a href="#">Política de Privacidade</a></li>
+                                <li><a href="#">Termos de Uso</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-4 mb-4">
+                        <div class="footer-widget">
+                            <h5 class="widget-title">Nossa Newsletter</h5>
+                            <p class="text-muted">Receba novidades e promoções exclusivas diretamente no seu e-mail.</p>
+                            <form class="newsletter-form">
+                                <div class="input-group">
+                                    <input type="email" class="form-control" placeholder="Seu melhor e-mail" required>
+                                    <button class="btn btn-custom-red" type="submit">Inscrever</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+    
+        <div class="footer-bottom bg-black text-white-50 py-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-2 mb-md-0">
+                        <small>&copy; 2025 SegurançaCerta. Todos os direitos reservados.</small>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <div class="social-links">
+                            <a href="#" class="me-3"><i class="bi bi-facebook"></i></a>
+                            <a href="#" class="me-3"><i class="bi bi-instagram"></i></a>
+                            <a href="#" class="me-3"><i class="bi bi-twitter-x"></i></a>
+                            <a href="#"><i class="bi bi-whatsapp"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
